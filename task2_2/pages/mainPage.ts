@@ -9,10 +9,10 @@ export class MainPage extends BasePage {
 
     constructor(page: Page) {
         super(page);
-        this.gameCards = page.locator('.game-card');
-        this.paginationNext = page.locator('.pagination-next');
-        this.paginationPrev = page.locator('.pagination-prev');
-        this.activePage = page.locator('.pagination-active')
+        this.gameCards = page.locator('.game-card'); // в локаторе нужно добавить реальный CSS селектор карточки игры 
+        this.paginationNext = page.locator('.pagination-next'); // здесь тоже, для реальной стрелки пагинации
+        this.paginationPrev = page.locator('.pagination-prev'); // здесь тоже
+        this.activePage = page.locator('.pagination-active') // здесь тоже
     }
 
     async getGameCardsCount(): Promise<number> {
