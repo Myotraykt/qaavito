@@ -55,7 +55,7 @@ npm test
 npx playwright show-report
 ```
 
-## Структура проекта
+## Структура проекта (если дерево отображается некорректно, переведите в режим Code или в RAW-режим)
 avito-test-assignment/
 ├── pages/             # Page Object модели
 ├── tests/             # Тестовые сценарии
